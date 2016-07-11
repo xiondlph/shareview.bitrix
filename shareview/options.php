@@ -32,8 +32,8 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 		CAdminMessage::ShowMessage(array(
 			"MESSAGE"=>GetMessage("SHAREVIEW_COMPLETE"),
 			"HTML"=>true,
-			"TYPE"=>"OK",			
-		));			
+			"TYPE"=>"OK",
+		));
 	}	
 
 	$key = COption::GetOptionString("shareview", "key", '');
@@ -50,5 +50,3 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 <? else: ?>
 <?	$APPLICATION->AuthForm(GetMessage("ACCESS_DENIED")); ?>
 <? endif; ?>
-
-	
