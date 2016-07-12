@@ -1,3 +1,3 @@
 <?
-$MESS["SHAREVIEW_KEY_NOT_SET"] = "Shareview key not set";
+$MESS["SHAREVIEW_KEY_NOT_SET"] = "Не указан ключ доступа";
 ?>
