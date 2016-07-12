@@ -22,11 +22,11 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 	$aTabs = array(
 		array("DIV" => "edit1", "TAB" => GetMessage("SHAREVIEW_TAB"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("SHAREVIEW_TAB")),
 	);
-	$tabControl = new CAdminTabControl("tabControl", $aTabs, true, true); ?>
+	$tabControl = new CAdminTabControl("tabControl", $aTabs, true, true);
+	$tabControl->Begin(); ?>
 
 	<form method="POST" action="<?echo $APPLICATION->GetCurPage()?>?mid=<?=htmlspecialcharsbx($mid)?>&lang=<?echo htmlspecialcharsbx(LANG)?>" name="shareview">
-<?	$tabControl->Begin();
-	$tabControl->BeginNextTab();
+<?	$tabControl->BeginNextTab();
 
 	if($save) {
 		CAdminMessage::ShowMessage(array(
@@ -38,7 +38,13 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 
 	$key = COption::GetOptionString("shareview", "key", '');
 	if(strlen($key) <= 0) $key = ''; ?>
-		<p><?echo GetMessage("SHAREVIEW_DESC")?></p>
+		<tr>
+			<td colspan="2">
+				<div class="adm-info-message-wrap">
+					<div class="adm-info-message"><?echo GetMessage("SHAREVIEW_DESC")?></div>
+				</div>
+			</td>
+		</tr>
 		<tr>
 			<td><?echo GetMessage("SHAREVIEW_KEY")?></td>
 			<td><input type="text" name="key" id="key" size="32" value="<?echo $key;?>"></td>

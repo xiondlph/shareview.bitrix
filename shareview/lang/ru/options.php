@@ -9,4 +9,7 @@ $MESS["SHAREVIEW_DESC"] 		= "Получить ключ можно на сайте <a href='http://www.sh
 
 $MESS["SHAREVIEW_MENU"] 		= "Shareview";
 $MESS["SHAREVIEW_MENU_SET_KEY"] = "Настройка";
+
+$MESS["SHAREVIEW_TAB_SET"]      = "Настройки";
+$MESS["SHAREVIEW_TAB_SET_ALT"]  = "Настройки модуля";
 ?>
