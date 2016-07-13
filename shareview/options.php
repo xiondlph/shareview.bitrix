@@ -9,8 +9,7 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 	}
 
 	$save = false;
-	if($_SERVER["REQUEST_METHOD"] == "POST")
-	{
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		CUtil::JSPostUnescape();
 
 		if(strlen($key) <= 0) $key = '';
@@ -28,16 +27,16 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 	<form method="POST" action="<?echo $APPLICATION->GetCurPage()?>?mid=<?=htmlspecialcharsbx($mid)?>&lang=<?echo htmlspecialcharsbx(LANG)?>" name="shareview">
 <?	$tabControl->BeginNextTab();
 
-	if($save) {
+	if ($save) {
 		CAdminMessage::ShowMessage(array(
 			"MESSAGE"=>GetMessage("SHAREVIEW_COMPLETE"),
 			"HTML"=>true,
 			"TYPE"=>"OK",
 		));
-	}	
+	}
 
 	$key = COption::GetOptionString("shareview", "key", '');
-	if(strlen($key) <= 0) $key = ''; ?>
+	if (strlen($key) <= 0) $key = ''; ?>
 		<tr>
 			<td colspan="2">
 				<div class="adm-info-message-wrap">
@@ -50,7 +49,7 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 			<td width="100%"><input type="text" name="key" id="key" size="52" value="<?echo $key;?>"></td>
 		</tr>
 <?	$tabControl->Buttons(); ?>
-		<input type="submit"  name="Update" value="<?php echo GetMessage("SHAREVIEW_BUTTON")?>"> 
+		<input type="submit"  name="Update" value="<?php echo GetMessage("SHAREVIEW_BUTTON")?>">
 <?	$tabControl->End(); ?>
 	</form>
 <? else: ?>

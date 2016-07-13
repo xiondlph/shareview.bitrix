@@ -1,5 +1,5 @@
 <?
-if(!check_bitrix_sessid()) return;
+if (!check_bitrix_sessid()) return;
 
 echo CAdminMessage::ShowNote(GetMessage("SHAREVIEW_UNINSTALL_MODULE"));
 ?>

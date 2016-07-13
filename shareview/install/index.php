@@ -1,5 +1,4 @@
 <?
-
 class shareview extends CModule {
 	var $MODULE_ID = "shareview";
 	var $MODULE_VERSION;
@@ -19,7 +18,7 @@ class shareview extends CModule {
 		$this->MODULE_VERSION_DATE 	= $arModuleVersion["VERSION_DATE"];
 
 		// $this->PARTNER_NAME 		= GetMessage("SHAREVIEW_PARTNER_NAME");
-		// $this->PARTNER_URI 			= GetMessage("SHAREVIEW_PARTNER_URI");     
+		// $this->PARTNER_URI 			= GetMessage("SHAREVIEW_PARTNER_URI");
 
 		$this->MODULE_NAME 			= GetMessage("SHAREVIEW_MODULE_NAME");
 		$this->MODULE_DESCRIPTION 	= GetMessage("SHAREVIEW_MODULE_DESCRIPTION");
@@ -28,8 +27,8 @@ class shareview extends CModule {
 
 	function InstallFiles() {
 		return CopyDirFiles(
-			$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/{$this->MODULE_ID}/install/components", 
-			$_SERVER["DOCUMENT_ROOT"]."/bitrix/components", 
+			$_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/{$this->MODULE_ID}/install/components",
+			$_SERVER["DOCUMENT_ROOT"]."/bitrix/components",
 			true, true);
 	}
 
