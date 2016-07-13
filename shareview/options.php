@@ -20,7 +20,7 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 	$APPLICATION->SetTitle(GetMessage("SHAREVIEW_TITLE"));
 
 	$aTabs = array(
-		array("DIV" => "edit1", "TAB" => GetMessage("SHAREVIEW_TAB"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("SHAREVIEW_TAB")),
+		array("DIV" => "edit1", "TAB" => GetMessage("SHAREVIEW_TAB"), "ICON"=>"main_user_edit", "TITLE"=>GetMessage("SHAREVIEW_TAB_TITLE")),
 	);
 	$tabControl = new CAdminTabControl("tabControl", $aTabs, true, true);
 	$tabControl->Begin(); ?>
@@ -47,7 +47,7 @@ $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 		</tr>
 		<tr>
 			<td><?echo GetMessage("SHAREVIEW_KEY")?></td>
-			<td><input type="text" name="key" id="key" size="32" value="<?echo $key;?>"></td>
+			<td width="100%"><input type="text" name="key" id="key" size="52" value="<?echo $key;?>"></td>
 		</tr>
 <?	$tabControl->Buttons(); ?>
 		<input type="submit"  name="Update" value="<?php echo GetMessage("SHAREVIEW_BUTTON")?>"> 
