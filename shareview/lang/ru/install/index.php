@@ -1,6 +1,6 @@
 <?
-// $MESS["SHAREVIEW_PARTNER_NAME"] 		= "ISMAX";
-// $MESS["SHAREVIEW_PARTNER_URI"] 			= "http://www.icsystem.ru";
+$MESS["SHAREVIEW_PARTNER_NAME"] 		= "ISMAX";
+$MESS["SHAREVIEW_PARTNER_URI"] 			= "http://www.shareview.ru";
 $MESS["SHAREVIEW_MODULE_NAME"] 			= "Shareview виджет";
 $MESS["SHAREVIEW_MODULE_DESCRIPTION"] 	= "Отзывы о товарах с Яндекс.Маркет";
 

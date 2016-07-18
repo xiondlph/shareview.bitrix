@@ -17,8 +17,8 @@ class shareview extends CModule {
 		$this->MODULE_VERSION 		= $arModuleVersion["VERSION"];
 		$this->MODULE_VERSION_DATE 	= $arModuleVersion["VERSION_DATE"];
 
-		// $this->PARTNER_NAME 		= GetMessage("SHAREVIEW_PARTNER_NAME");
-		// $this->PARTNER_URI 			= GetMessage("SHAREVIEW_PARTNER_URI");
+        $this->PARTNER_NAME 		= GetMessage("SHAREVIEW_PARTNER_NAME");
+        $this->PARTNER_URI 			= GetMessage("SHAREVIEW_PARTNER_URI");
 
 		$this->MODULE_NAME 			= GetMessage("SHAREVIEW_MODULE_NAME");
 		$this->MODULE_DESCRIPTION 	= GetMessage("SHAREVIEW_MODULE_DESCRIPTION");
