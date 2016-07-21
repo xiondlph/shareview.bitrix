@@ -42,7 +42,7 @@ class ismax_shareview extends CModule {
 		if ($this->InstallFiles()) {
 			RegisterModule($this->MODULE_ID);
 		}
-		$APPLICATION->IncludeAdminFile(GetMessage("SHAREVIEW_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shareview/install/step.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SHAREVIEW_INSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/step.php");
 	}
 
 	function DoUninstall() {
@@ -51,7 +51,7 @@ class ismax_shareview extends CModule {
 		$this->UnInstallFiles();
 		UnRegisterModule($this->MODULE_ID);
 
-		$APPLICATION->IncludeAdminFile(GetMessage("SHAREVIEW_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/shareview/install/unstep.php");
+		$APPLICATION->IncludeAdminFile(GetMessage("SHAREVIEW_UNINSTALL_TITLE"), $_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/".$this->MODULE_ID."/install/unstep.php");
 	}
 }
 

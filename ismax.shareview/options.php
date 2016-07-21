@@ -1,5 +1,5 @@
 <?
-$module_id = "shareview";
+$module_id = "ismax.shareview";
 $CAT_RIGHT = $APPLICATION->GetGroupRight($module_id); ?>
 <? if ($CAT_RIGHT >= "R") : ?>
 

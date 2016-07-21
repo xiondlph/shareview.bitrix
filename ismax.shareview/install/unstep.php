@@ -1,6 +1,6 @@
 <?
 if (!check_bitrix_sessid()) return;
-
+IncludeModuleLangFile(__FILE__);
 echo CAdminMessage::ShowNote(GetMessage("SHAREVIEW_UNINSTALL_MODULE"));
 ?>
 <form action="<?echo $APPLICATION->GetCurPage()?>">
