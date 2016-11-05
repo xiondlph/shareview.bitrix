@@ -4,5 +4,5 @@
 		data-url="/bitrix/components/ismax/shareview/review.php"
 		data-keyword-text="<?= $arResult['PRODUCT']['NAME'] ?>"
 		data-id="shareview-interface"
-		src="http://www.shareview.ru/dist/bundle_cp1251.js">
+		src="http://www.shareview.ru/widget/dist/bundle_cp1251.js">
 </script>
